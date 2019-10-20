@@ -107,6 +107,9 @@ module.exports = class Configuration
 
     # Support *.xip.io top-level domains.
     @allDomains.push /\d+\.\d+\.\d+\.\d+\.xip\.io$/, /[0-9a-z]{1,7}\.xip\.io$/
+    
+    # Support *.nip.io top-level domains.
+    @allDomains.push /\d+\.\d+\.\d+\.\d+\.nip\.io$/, /[0-9a-z]{1,7}\.nip\.io$/
 
     # Runtime support files live in `~/Library/Application Support/Pow`.
     @supportRoot = libraryPath "Application Support", "Pow"
